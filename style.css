@@ -1,0 +1,93 @@
+ /* Hint: What can you do with a media query and flexbox? */
+@media (max-width: 1250px)
+{
+    .pricing-container
+    {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 5rem;
+       height: 100vh;
+       margin-top: 30%;
+    }
+
+    .pricing-plan
+    {
+        border-radius: 2%;
+        background-color: rgb(241, 241, 241);
+        min-height: 10vh;
+        text-align: center;
+        display: block;
+        border: 2px black solid;
+        margin-bottom: 20px;
+        min-width: 50%;
+    }
+}
+
+body
+{
+    font-family: 'Sono', sans-serif;
+}
+
+.plan-title, .plan-price
+{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plan-title
+{
+    font-size: 1.5rem;
+}
+
+.plan-price
+{
+font-size: 3rem;
+}
+
+.plan-features
+{
+    padding-left: 0%;
+    align-items: center;
+    list-style: none;
+}
+
+.plan-features > li
+{
+    margin-bottom: 20px;
+}
+
+.plan-button
+{
+    background-color: rgb(255, 91, 26);
+    color: white;
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: -8px;
+    border-radius: 10%;
+    border: none;
+}
+
+@media (min-width: 1251px)
+{
+    .pricing-container
+    {
+        display: flex;
+        gap: 2rem;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-plan
+    {
+        border-radius: 2%;
+        background-color: rgb(241, 241, 241);
+        flex-basis: 25%;
+        min-height: 300px;
+        text-align: center;
+    }
+}
